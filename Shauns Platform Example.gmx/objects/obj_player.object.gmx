@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Initialize variables
+            <string>/// Initialize variables
 grav = 1;
 spd = 4;
 jspd = 12;
@@ -80,6 +80,10 @@ if (place_meeting(x+hspd, y, obj_solid_parent)) {
     hspd = 0;
 }
 
+// Move the object horizontally
+// This MUST be before any vertical collisions and movement
+x += hspd;
+
 // Vertical collisions
 if (place_meeting(x, y+vspd, obj_solid_parent)) {
     while (!place_meeting(x, y+sign(vspd), obj_solid_parent)) {
@@ -88,13 +92,7 @@ if (place_meeting(x, y+vspd, obj_solid_parent)) {
     vspd = 0;
 }
 
-// Corner collisions
-if (place_meeting(x+hspd, y+vspd, obj_solid_parent)) {
-    hspd = 0;
-}
-
-// Move the object
-x += hspd;
+// Move the vertically
 y += vspd;
 
 </string>
