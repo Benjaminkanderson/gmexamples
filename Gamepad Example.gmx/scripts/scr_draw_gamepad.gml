@@ -10,9 +10,9 @@ var vw = view_wview[0]/2;
 var xc = vx+vw+64;
 var yc = vy+vh-16;
 
-draw_sprite_ext(spr_gamepad,0,vx+vw,vy+vh,.5,.5,0,c_white,.25);
+draw_sprite_ext(spr_gamepad,0,vx+vw,vy+vh,.5,.5,0,c_white,.35);
 
-draw_set_alpha(.25);
+draw_set_alpha(.2);
 
 // Draw the left and right analog stick bases
 draw_circle_color(vx+vw-64, vy+vh-16, 20, c_black, c_black, false);
@@ -44,7 +44,7 @@ if (a_btn) {
 } else {
     draw_circle(xc-12,yc,6,false);
 }
-draw_set_alpha(.25);
+draw_set_alpha(.2);
 
 // B
 if (b_btn) {
@@ -53,7 +53,7 @@ if (b_btn) {
 } else {
     draw_circle(xc+12,yc,6,false);
 }
-draw_set_alpha(.25);
+draw_set_alpha(.2);
 
 // X
 if (x_btn) {
@@ -62,7 +62,7 @@ if (x_btn) {
 } else {
     draw_circle(xc,yc+12,6,false);
 }
-draw_set_alpha(.25);
+draw_set_alpha(.2);
 
 // Y
 if (y_btn) {
@@ -71,7 +71,7 @@ if (y_btn) {
 } else {
     draw_circle(xc,yc-12,6,false);
 }
-draw_set_alpha(.25);
+draw_set_alpha(.2);
 
 // Draw the rest of the d pad
 draw_rectangle(vx+vw-32-3,vy+vh+16-3,vx+vw-32+3,vy+vh+16+3,false); //center
