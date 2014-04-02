@@ -14,6 +14,7 @@ var yc = vy+vh-16;
 
 draw_sprite_ext(spr_gamepad,0,vx+vw,vy+vh,.5,.5,0,argument0,.35);
 
+/*
 if (r_btn) {
     draw_sprite_ext(spr_right_button,0,vx+vw,vy+vh,.5,.5,0,argument1,.5);
 } else {
@@ -24,7 +25,7 @@ if (l_btn) {
     draw_sprite_ext(spr_left_button,0,vx+vw,vy+vh,.5,.5,0,argument1,.5);
 } else {
     draw_sprite_ext(spr_left_button,0,vx+vw,vy+vh,.5,.5,0,argument1,.2);
-}
+}*/
 
 draw_set_alpha(.2);
 
