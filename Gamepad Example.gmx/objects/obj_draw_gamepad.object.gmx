@@ -113,11 +113,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>c_black</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string></string>
+            <string>c_white</string>
           </argument>
           <argument>
             <kind>0</kind>

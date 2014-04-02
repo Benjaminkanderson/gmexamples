@@ -7,6 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_gamepad</sprite>
+    <sprite>sprites\spr_right_button</sprite>
+    <sprite>sprites\spr_left_button</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
