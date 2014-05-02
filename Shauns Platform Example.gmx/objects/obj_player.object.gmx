@@ -72,28 +72,7 @@ if (place_meeting(x, y+1, obj_solid_parent)) {
     vspd = jkey * -jspd;
 }
 
-// Horizontal collisions
-if (place_meeting(x+hspd, y, obj_solid_parent)) {
-    while (!place_meeting(x+sign(hspd), y, obj_solid_parent)) {
-        x += sign(hspd);
-    }
-    hspd = 0;
-}
-
-// Move the object horizontally
-// This MUST be before any vertical collisions and movement
-x += hspd;
-
-// Vertical collisions
-if (place_meeting(x, y+vspd, obj_solid_parent)) {
-    while (!place_meeting(x, y+sign(vspd), obj_solid_parent)) {
-        y += sign(vspd);
-    }
-    vspd = 0;
-}
-
-// Move the vertically
-y += vspd;
+scr_move_collide(hspd,vspd,obj_solid_parent);
 
 </string>
           </argument>

@@ -11,6 +11,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_move_collide.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_solid_parent</object>
     <object>objects\obj_player</object>
