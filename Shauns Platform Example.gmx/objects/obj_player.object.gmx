@@ -53,25 +53,43 @@ vspd = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get inputs
+            <string>///Calculate the platform physics
+
+// Get inputs
 var rkey = keyboard_check(vk_right);
-var lkey = -keyboard_check(vk_left);
+var lkey = keyboard_check(vk_left);
 var jkey = keyboard_check_pressed(vk_up);
 
-// Calculate movement
-move = rkey + lkey;
-hspd = move * spd;
-
 // Calculate gravity
-if (vspd &lt; 10) {
-    vspd += grav;
-}
-
-// Jumping
 if (place_meeting(x, y+1, obj_solid_parent)) {
-    vspd = jkey * -jspd;
+    vspd = 0;
+    
+    // Jumping
+    if (jkey) {
+        vspd = -jspd;
+    }
+} else {
+    if (vspd &lt; 10) {
+        vspd += grav;
+    }
 }
 
+// Moving right
+if (rkey) {
+    hspd = spd;
+}
+
+// Moving left
+if (lkey) {
+    hspd = -spd;
+}
+
+// Check for don't move case
+if ((lkey &amp;&amp; rkey) || (!lkey &amp;&amp; !rkey)) {
+    hspd = 0;
+}
+
+// Handle actual movement and collisions
 scr_move_collide(hspd,vspd,obj_solid_parent);
 
 </string>
