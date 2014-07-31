@@ -1,8 +1,7 @@
 ///scr_ship_init()
 
 target = -1;
-foe = -1;
-selected = false;
+selected = true;
 state = 'idle';
 spd = 4;
 acc = .5;

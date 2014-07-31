@@ -19,22 +19,12 @@
     <script>scripts\scr_ship_init.gml</script>
     <script>scripts\scr_ship_idle.gml</script>
     <script>scripts\scr_ship_move.gml</script>
-    <script>scripts\scr_toggle_select.gml</script>
-    <script>scripts\scr_move_view.gml</script>
-    <script>scripts\scr_enemy_ship_attack.gml</script>
-    <script>scripts\scr_enemy_ship_chase.gml</script>
-    <script>scripts\scr_enemy_ship_idle.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_ship</object>
-    <object>objects\obj_player_ship</object>
-    <object>objects\obj_enemy_ship</object>
-    <object>objects\obj_player_worker</object>
-    <object>objects\obj_player_fighter</object>
-    <object>objects\obj_enemy_fighter</object>
+    <object>objects\obj_worker</object>
+    <object>objects\obj_fighter</object>
     <object>objects\obj_target</object>
-    <object>objects\obj_mouse</object>
-    <object>objects\obj_view_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

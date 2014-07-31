@@ -28,6 +28,7 @@
             <string>/// Create the item variable
 
 item = -1;
+type = '';
 </string>
           </argument>
         </arguments>

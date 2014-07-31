@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>spr_inventory_box_mask</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -25,9 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Initialize some variables
+            <string>/// Create the item variable
 
 item = -1;
+type = '';
 </string>
           </argument>
         </arguments>
@@ -50,7 +51,7 @@ item = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Set the inventory to follow the view
+            <string>/// Make the box follow the view relative to it's start location
 
 x = xstart+view_xview[0];
 y = ystart+view_yview[0];
@@ -76,13 +77,10 @@ y = ystart+view_yview[0];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Take an item from the inventory
+            <string>/// Take an item from this box
 
-if (item != -1) {
-    // Move the item to the global item slot
+if (item != -1 &amp;&amp; global.game_state == 'pause') {
     global.item = item;
-    
-    // Remove the item for the inventory
     item = -1;
 }
 </string>
@@ -107,14 +105,14 @@ if (item != -1) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw the inventory box
+            <string>/// Draw the inventory box and item
 
 if (global.game_state == 'pause') {
     draw_set_alpha(.25);
     draw_roundrect(view_xview[0]+xstart, view_yview[0]+ystart, view_xview[0]+xstart+32, view_yview[0]+ystart+32, false);
     draw_set_alpha(1);
     if (item != -1) {
-        draw_sprite_ext(object_get_sprite(item), 0, view_xview[0]+xstart+16, view_yview[0]+ystart+16, 1, 1, 0, c_white, 1);
+        draw_sprite(object_get_sprite(item), 0, view_xview[0]+xstart+16, view_yview[0]+ystart+16);
     }
 }
 </string>

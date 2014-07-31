@@ -32,7 +32,7 @@ spd = 4;
 jspd = 12;
 hspd = 0;
 vspd = 0;
-airjump = 1;
+airjump = 2;
 </string>
           </argument>
         </arguments>
@@ -66,6 +66,7 @@ var jkey = keyboard_check_pressed(vk_up);
 
 // Check for the ground
 if (place_meeting(x, y+1, obj_solid)) {
+    airjump = 2;
     vspd = 0;
     
     if (jkey) {
@@ -80,7 +81,7 @@ if (place_meeting(x, y+1, obj_solid)) {
     // Check for airjump
     if (airjump &gt; 0) {
         if (jkey) {
-            vspd =-jspd;
+            vspd = -jspd;
             airjump -= 1;
         }
     }
@@ -118,7 +119,6 @@ if (place_meeting(x, y+vspd, obj_solid)) {
         y+= sign(vspd);
     }
     vspd = 0;
-    airjump = 1;
 }
 
 // Move vertically

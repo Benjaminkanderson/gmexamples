@@ -53,11 +53,11 @@ global.item = -1;
             <string>/// Drop the item
 
 if (global.item != -1) {
-    if (instance_place(mouse_x, mouse_y, obj_inventory_box) &amp;&amp; global.game_state = 'pause') {
-        var box = instance_place(mouse_x, mouse_y, obj_inventory_box);
+    if (instance_position(mouse_x, mouse_y, obj_inventory_box) &amp;&amp; global.game_state = 'pause') {
+        var box = instance_position(mouse_x, mouse_y, obj_inventory_box);
         
         // Make sure the slot is empty
-        if (box.item == -1) {
+        if (box.item == -1 &amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '')) { 
             // Put the item in the box
             box.item = global.item;
             global.item = -1;

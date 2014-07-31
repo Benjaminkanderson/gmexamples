@@ -1,6 +1,6 @@
-///scr_ship_move
+///scr_ship_move()
 
-// Set the friction to 0
+// Set the friction to zero
 friction = 0;
 
 // Move towards the target if it exists
@@ -16,5 +16,3 @@ if (instance_exists(target)) {
 
 // Don't go faster than the max speed
 if (speed > spd) speed = spd;
-
-
