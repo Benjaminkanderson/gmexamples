@@ -7,7 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_palette</sprite>
+    <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_stargem</sprite>
+    <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_player_die</sprite>
     <sprite>sprites\spr_player_mask</sprite>
@@ -28,6 +31,10 @@
     <object>objects\obj_stargem</object>
     <object>objects\obj_spike</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_player_die</object>
+    <object>objects\obj_key</object>
+    <object>objects\obj_door</object>
+    <object>objects\obj_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_one</room>
@@ -36,6 +43,8 @@
     <room>rooms\rm_four</room>
     <room>rooms\rm_five</room>
     <room>rooms\rm_six</room>
+    <room>rooms\rm_seven</room>
+    <room>rooms\rm_eight</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
