@@ -3,12 +3,12 @@
   <caption></caption>
   <width>640</width>
   <height>480</height>
-  <vsnap>32</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>128</colour>
+  <colour>5789501</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -84,7 +84,7 @@
     <instance objName="obj_solid" x="288" y="352" name="inst_7C0F920B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="320" y="352" name="inst_943C86DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="320" y="320" name="inst_0108EB80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="192" y="256" name="inst_87924C3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="160" y="128" name="inst_6FD840D7" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="352" y="320" name="inst_0BD2BBE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="384" y="320" name="inst_027974CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="352" y="352" name="inst_F49AF59E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -98,7 +98,7 @@
     <instance objName="obj_solid" x="416" y="0" name="inst_9690377F" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="288" y="0" name="inst_B4ED98AB" locked="0" code="" scaleX="1.5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="288" y="-32" name="inst_4D6B8B3A" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid" x="160" y="128" name="inst_6FD840D7" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="96" y="272" name="inst_CDCF0BCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

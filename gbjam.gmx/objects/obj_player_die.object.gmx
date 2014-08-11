@@ -53,8 +53,7 @@ gravity = .5;
             <string>/// Check if we have fallen off the screen
 
 if (y &gt; room_height + 32) {
-    instance_create(xstart, ystart, obj_player);
-    instance_destroy();
+    room_restart();
 }
 </string>
           </argument>

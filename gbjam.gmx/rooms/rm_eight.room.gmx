@@ -11,7 +11,7 @@
   <colour>9417557</colour>
   <showcolour>0</showcolour>
   <code></code>
-  <enableViews>-1</enableViews>
+  <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -70,8 +70,8 @@
     <instance objName="obj_spike" x="48" y="120" name="inst_B17FA41A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="56" y="120" name="inst_A24E1BB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="-16" y="-16" name="inst_F812B29A" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid" x="160" y="-16" name="inst_3AE9FD8C" locked="0" code="" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="32" y="16" name="inst_38BD461D" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="96" y="0" name="inst_A8D01176" locked="0" code="" scaleX="4" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tl_ground" x="128" y="96" w="16" h="16" xo="16" yo="0" id="10000125" name="inst_725C0454" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -103,6 +103,18 @@
     <tile bgName="tl_ground" x="48" y="128" w="16" h="16" xo="0" yo="0" id="10000305" name="inst_A57544A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_ground" x="32" y="96" w="16" h="16" xo="16" yo="32" id="10000306" name="inst_5ABDF9BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tl_ground" x="32" y="112" w="16" h="16" xo="16" yo="32" id="10000307" name="inst_B8F83993" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="96" y="32" w="16" h="16" xo="32" yo="16" id="10000308" name="inst_76A7A8C3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="96" y="16" w="16" h="16" xo="0" yo="48" id="10000309" name="inst_C4609EF7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="96" y="0" w="16" h="16" xo="0" yo="48" id="10000310" name="inst_2DD5B7AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="144" y="32" w="16" h="16" xo="16" yo="48" id="10000311" name="inst_7F167E23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="144" y="16" w="16" h="16" xo="0" yo="16" id="10000312" name="inst_0692B49E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="144" y="0" w="16" h="16" xo="0" yo="16" id="10000313" name="inst_AA6A2B9C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="112" y="32" w="16" h="16" xo="16" yo="48" id="10000314" name="inst_EC3EBCF9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="128" y="32" w="16" h="16" xo="16" yo="48" id="10000315" name="inst_1A28B309" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="112" y="0" w="16" h="16" xo="0" yo="16" id="10000316" name="inst_59CE0216" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="128" y="0" w="16" h="16" xo="0" yo="16" id="10000317" name="inst_380ABE46" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="112" y="16" w="16" h="16" xo="0" yo="16" id="10000318" name="inst_3CF037F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tl_ground" x="128" y="16" w="16" h="16" xo="0" yo="16" id="10000319" name="inst_47C8E545" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
