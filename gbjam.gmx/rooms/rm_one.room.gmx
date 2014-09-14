@@ -11,7 +11,7 @@
   <colour>9417557</colour>
   <showcolour>0</showcolour>
   <code></code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -59,7 +59,7 @@
     <instance objName="obj_solid" x="32" y="0" name="inst_F3795248" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_timer" x="144" y="0" name="inst_45F70854" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stargem" x="144" y="104" name="inst_9085EC64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_roomscale" x="40" y="64" name="inst_69DC053E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="-64" y="-24" name="inst_39F6E5C7" locked="0" code="/// Set room warp&#xA;roomwarp = rm_five;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sound_controller" x="72" y="48" name="inst_4DB29FFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_globals" x="72" y="72" name="inst_4E1E2FFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="-16" y="-16" name="inst_ACCB2FB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -67,7 +67,6 @@
     <instance objName="obj_solid" x="-88" y="-56" name="inst_9969763E" locked="0" code="" scaleX="7.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="-88" y="-40" name="inst_8BCC5762" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="-72" y="-16" name="inst_40595491" locked="0" code="" scaleX="3.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="-64" y="-24" name="inst_39F6E5C7" locked="0" code="/// Set room warp&#xA;roomwarp = rm_five;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tl_ground" x="0" y="112" w="16" h="16" xo="0" yo="0" id="10000053" name="inst_EC1FC8F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
