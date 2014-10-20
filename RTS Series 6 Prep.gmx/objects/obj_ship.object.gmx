@@ -79,7 +79,7 @@ if (hp &lt;= 0) {
             <kind>1</kind>
             <string>/// Collide code
 
-motion_add(point_direction(other.x, other.y, x, y), 1);
+motion_add(point_direction(other.x, other.y, x, y), .5);
 
 // Check to see if you would be stuck
 if (x == other.x &amp;&amp; y == other.y) {

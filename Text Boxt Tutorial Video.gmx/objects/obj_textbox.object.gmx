@@ -115,7 +115,7 @@ if (count &lt; string_length( message )) {
     }
     
     // Increment the count
-    count ++;
+    count += .1;
 }
 
 // Did we go past the bottom? Move up a line

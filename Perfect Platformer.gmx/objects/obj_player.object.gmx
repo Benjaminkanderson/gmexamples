@@ -32,6 +32,7 @@ spd = 4;
 jspd = 12;
 hspd = 0;
 vspd = 0;
+fric = 1;
 </string>
           </argument>
         </arguments>
@@ -79,17 +80,31 @@ if (place_meeting(x, y+1, obj_solid)) {
 
 // Moving right
 if (rkey) {
-    hspd = spd;
+    if (hspd &lt; spd) {
+        hspd += fric;
+    } else {
+        hspd = spd;
+    }
 }
 
 // Moving left
 if (lkey) {
-    hspd = -spd;
+    if (hspd &gt; -spd) {
+        hspd -= fric;
+    } else {
+        hspd = -spd;
+    }
 }
 
 // Check for not moving
 if ((!rkey &amp;&amp; !lkey) || (rkey &amp;&amp; lkey)) {
-    hspd = 0;
+    if (hspd != 0) {
+        if (hspd &lt; 0) {
+            hspd += fric;
+        } else {
+            hspd -= fric;
+        }
+    }
 }
 
 // Horizontal collisions

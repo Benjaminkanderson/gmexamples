@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_worker</sprite>
+    <sprite>sprites\spr_spacestation</sprite>
     <sprite>sprites\spr_fighter</sprite>
     <sprite>sprites\spr_enemy_fighter</sprite>
     <sprite>sprites\spr_mask</sprite>
@@ -45,12 +46,13 @@
     <object>objects\obj_laser</object>
     <object>objects\obj_enemy_weapon</object>
     <object>objects\obj_enemy_laser</object>
+    <object>objects\obj_spacestation</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41870.1723542245</constant>
+    <constant name="GM_build_date">41909.2514532986</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
