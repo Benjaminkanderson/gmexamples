@@ -33,13 +33,13 @@ bs[WATER] = scr_create_stats(42, 39, 64, 54);
 bs[GRASS] = scr_create_stats(45, 65, 56, 45);
 
 global.leftmonster = ds_map_create();
-global.leftmonster[? "level"] = 81;
+global.leftmonster[? "level"] = 5;
 global.leftmonster[? "bs"] = bs[FIRE];
 global.leftmonster[? "gs"] = scr_create_random_stats();
 global.leftmonster[? "ts"] = scr_create_stats(0, 0, 0, 0);
 
 global.rightmonster = ds_map_create();
-global.rightmonster[? "level"] = 1;
+global.rightmonster[? "level"] = 5;
 global.rightmonster[? "bs"] = bs[GRASS];
 global.rightmonster[? "gs"] = scr_create_random_stats();
 global.rightmonster[? "ts"] = scr_create_stats(0, 0, 0, 0);

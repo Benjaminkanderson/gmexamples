@@ -6,5 +6,5 @@ var lvl = argument[3]; // Level
 var stat;
 
 // Health stat
-stat=ceil(((gs+bs+ts+50)*lvl+10)/50);
+stat=ceil(((gs+bs+ts+50)*lvl)/50)+10;
 return stat;

@@ -6,5 +6,5 @@ var lvl = argument[3]; // Level
 var stat;
 
 // Normal stat
-stat=ceil(((gs+bs+ts)*lvl+5)/50);
+stat=ceil(((gs+bs+ts)*lvl)/50)+5;
 return stat;
