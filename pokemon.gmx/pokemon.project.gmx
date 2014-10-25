@@ -36,7 +36,12 @@
     <script>scripts\scr_player_stand.gml</script>
     <script>scripts\scr_checkforbattle.gml</script>
     <script>scripts\scr_init_monster.gml</script>
+    <script>scripts\scr_create_base_stats.gml</script>
+    <script>scripts\scr_create_base_stat.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_one</font>
+  </fonts>
   <objects name="objects">
     <object>objects\model</object>
     <object>objects\obj_test_fire</object>
@@ -50,6 +55,7 @@
     <object>objects\obj_playerstats</object>
     <object>objects\obj_textbox</object>
     <object>objects\obj_enemystats</object>
+    <object>objects\obj_model</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

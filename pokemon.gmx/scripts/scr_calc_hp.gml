@@ -1,4 +1,4 @@
-///scr_calc_stat(bs, gs, ts, level)
+///scr_calc_hp(bs, gs, ts, level)
 var bs = argument[0]; // Base stat
 var gs = argument[1]; // Genetic stat
 var ts = argument[2]; // Trainting stat

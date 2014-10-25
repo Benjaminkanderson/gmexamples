@@ -419,14 +419,16 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
   </Options>
   <ConfigConstants>
-    <constants number="7">
-      <constant name="FIRE">0</constant>
-      <constant name="WATER">1</constant>
-      <constant name="GRASS">2</constant>
+    <constants number="9">
       <constant name="PLAYER_MOVE">scr_player_move</constant>
       <constant name="PLAYER_STAND">scr_player_stand</constant>
       <constant name="ROW">16</constant>
       <constant name="COL">16</constant>
+      <constant name="HP">0</constant>
+      <constant name="ATTACK">1</constant>
+      <constant name="DEFENSE">2</constant>
+      <constant name="SPEED">3</constant>
+      <constant name="SPECIAL">4</constant>
     </constants>
   </ConfigConstants>
 </Config>
