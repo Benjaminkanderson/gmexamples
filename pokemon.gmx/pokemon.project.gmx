@@ -38,9 +38,12 @@
     <script>scripts\scr_init_monster.gml</script>
     <script>scripts\scr_create_base_stats.gml</script>
     <script>scripts\scr_create_base_stat.gml</script>
+    <script>scripts\scr_create_type_chart.gml</script>
+    <script>scripts\scr_create_type.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_one</font>
+    <font>fonts\fnt_two</font>
   </fonts>
   <objects name="objects">
     <object>objects\model</object>

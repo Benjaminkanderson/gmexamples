@@ -58,6 +58,9 @@ draw_text(110, 78, string(hp));
 draw_text(142, 78, string(stats[HP]));
 draw_set_halign(fa_left);
 
+// Draw the hp bar
+draw_rectangle_colour(96, 75, 143, 76, c_gray, c_gray, c_gray, c_gray, false);
+
 draw_self();
 </string>
           </argument>

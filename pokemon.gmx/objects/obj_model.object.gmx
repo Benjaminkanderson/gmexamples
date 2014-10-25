@@ -26,10 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>/// Create the model
-global.M = self.id;
+
+// Create the base stats
 scr_create_base_stats();
+
+// Create the attacks
 //scr_create_attacks();
 
+// Create the type chart
+scr_create_type_chart();
+
+// Set the font
 draw_set_font(fnt_one);
 </string>
           </argument>
