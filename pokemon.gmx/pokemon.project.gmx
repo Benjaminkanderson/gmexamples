@@ -9,9 +9,18 @@
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_water</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_player_left</sprite>
+    <sprite>sprites\spr_player_right</sprite>
+    <sprite>sprites\spr_player_up</sprite>
+    <sprite>sprites\spr_player_down</sprite>
+    <sprite>sprites\spr_pokemon_front</sprite>
+    <sprite>sprites\spr_pokemon_back</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_battle</background>
+    <background>background\bg_tiles</background>
+    <background>background\bg_grass</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -22,6 +31,8 @@
     <script>scripts\scr_create_monster.gml</script>
     <script>scripts\scr_get_battle_stats.gml</script>
     <script>scripts\scr_take_damage.gml</script>
+    <script>scripts\scr_player_move.gml</script>
+    <script>scripts\scr_player_stand.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\model</object>
@@ -30,8 +41,11 @@
     <object>objects\obj_test_grass</object>
     <object>objects\obj_test_parent</object>
     <object>objects\obj_battle_controller</object>
+    <object>objects\obj_player</object>
+    <object>objects\obj_grid</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <constants number="3">
