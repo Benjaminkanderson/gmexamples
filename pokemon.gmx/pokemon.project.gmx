@@ -8,8 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_grass</sprite>
-    <sprite>sprites\spr_water</sprite>
-    <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_player_left</sprite>
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_up</sprite>
@@ -18,7 +16,6 @@
     <sprite>sprites\spr_pokemon_back</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_battle</background>
     <background>background\bg_tiles</background>
     <background>background\bg_grass</background>
   </backgrounds>
@@ -37,7 +34,6 @@
   <objects name="objects">
     <object>objects\model</object>
     <object>objects\obj_test_fire</object>
-    <object>objects\obj_test_water</object>
     <object>objects\obj_test_grass</object>
     <object>objects\obj_test_parent</object>
     <object>objects\obj_battle_controller</object>
