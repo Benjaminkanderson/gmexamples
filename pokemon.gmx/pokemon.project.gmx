@@ -6,8 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_fire</sprite>
-    <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_player_left</sprite>
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_up</sprite>
@@ -46,19 +44,13 @@
     <font>fonts\fnt_two</font>
   </fonts>
   <objects name="objects">
-    <object>objects\model</object>
-    <object>objects\obj_test_fire</object>
-    <object>objects\obj_test_grass</object>
-    <object>objects\obj_test_parent</object>
-    <object>objects\obj_battle_controller</object>
+    <object>objects\obj_model</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_grid</object>
     <object>objects\obj_my_monster</object>
     <object>objects\obj_enemy_monster</object>
     <object>objects\obj_playerstats</object>
     <object>objects\obj_textbox</object>
     <object>objects\obj_enemystats</object>
-    <object>objects\obj_model</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

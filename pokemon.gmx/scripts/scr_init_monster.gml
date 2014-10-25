@@ -12,3 +12,5 @@ stats[HP] = scr_calc_hp(m.bs[monster_id, HP], 31, 0, level);
 for (var i=1; i<4; i++) {
     stats[i] = scr_calc_stat(m.bs[monster_id, i], 31, 0, level); 
 }
+stats[TYPE] = m.bs[monster_id, TYPE];
+stats[NAME] = m.bs[monster_id, NAME];
