@@ -14,10 +14,14 @@
     <sprite>sprites\spr_player_down</sprite>
     <sprite>sprites\spr_pokemon_front</sprite>
     <sprite>sprites\spr_pokemon_back</sprite>
+    <sprite>sprites\spr_textbox</sprite>
+    <sprite>sprites\spr_enemystats</sprite>
+    <sprite>sprites\spr_playerstats</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tiles</background>
     <background>background\bg_grass</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -30,6 +34,8 @@
     <script>scripts\scr_take_damage.gml</script>
     <script>scripts\scr_player_move.gml</script>
     <script>scripts\scr_player_stand.gml</script>
+    <script>scripts\scr_checkforbattle.gml</script>
+    <script>scripts\scr_init_monster.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\model</object>
@@ -39,10 +45,15 @@
     <object>objects\obj_battle_controller</object>
     <object>objects\obj_player</object>
     <object>objects\obj_grid</object>
+    <object>objects\obj_my_monster</object>
+    <object>objects\obj_enemy_monster</object>
+    <object>objects\obj_playerstats</object>
+    <object>objects\obj_textbox</object>
+    <object>objects\obj_enemystats</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <constants number="3">
     <constant name="GM_build_date">41932.691667662</constant>
