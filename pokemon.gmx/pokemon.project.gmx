@@ -55,6 +55,9 @@
     <object>objects\obj_choice_text</object>
     <object>objects\obj_grass</object>
     <object>objects\obj_run</object>
+    <object>objects\obj_attack</object>
+    <object>objects\obj_items</object>
+    <object>objects\obj_switch</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
