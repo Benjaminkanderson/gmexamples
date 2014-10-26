@@ -28,6 +28,43 @@
             <string>/// initialize the battle monster
 scr_init_monster(0, 3);
 hp = stats[HP];
+state = 'idle';
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Control the enemy monster
+if (hp &lt;= 0) {
+    state = 'die'
+    obj_battle_controller.alarm[0] = 120;
+}
+
+switch(state) {
+    case 'idle':
+        break;
+        
+    case 'die':
+        scr_enemy_die_state();
+        break;
+}
 </string>
           </argument>
         </arguments>
@@ -59,7 +96,9 @@ draw_text(6, -1, stats[NAME]);
 draw_set_font(fnt_one);
 
 // Draw the hp bar
-draw_rectangle_colour(32, 21, 79, 22, c_gray, c_gray, c_gray, c_gray, false);
+if (hp &gt; 0) {
+    draw_rectangle_colour(32, 21, 32+(47*(hp/stats[HP])), 22, c_gray, c_gray, c_gray, c_gray, false);
+}
 
 draw_self();
 </string>

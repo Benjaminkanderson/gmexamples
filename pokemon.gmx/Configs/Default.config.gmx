@@ -419,7 +419,7 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
   </Options>
   <ConfigConstants>
-    <constants number="17">
+    <constants number="23">
       <constant name="PLAYER_MOVE">scr_player_move</constant>
       <constant name="PLAYER_STAND">scr_player_stand</constant>
       <constant name="ROW">16</constant>
@@ -437,6 +437,12 @@
       <constant name="ID">0</constant>
       <constant name="FIRST">0</constant>
       <constant name="LEVEL">1</constant>
+      <constant name="MOVE">2</constant>
+      <constant name="ATT_POWER">0</constant>
+      <constant name="ATT_TYPE">1</constant>
+      <constant name="ATT_NAME">2</constant>
+      <constant name="EMBER">0</constant>
+      <constant name="VINEWHIP">1</constant>
     </constants>
   </ConfigConstants>
 </Config>

@@ -31,7 +31,7 @@
 scr_create_base_stats();
 
 // Create the attacks
-//scr_create_attacks();
+scr_create_moves();
 
 // Create the type chart
 scr_create_type_chart();

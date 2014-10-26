@@ -36,6 +36,8 @@
     <script>scripts\scr_create_base_stat.gml</script>
     <script>scripts\scr_create_type_chart.gml</script>
     <script>scripts\scr_create_type.gml</script>
+    <script>scripts\scr_enemy_die_state.gml</script>
+    <script>scripts\scr_create_moves.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_one</font>
@@ -58,6 +60,7 @@
     <object>objects\obj_attack</object>
     <object>objects\obj_items</object>
     <object>objects\obj_switch</object>
+    <object>objects\obj_battle_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

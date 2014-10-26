@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Initialize the choice parent
 monster_id = 0;
+move_id = 1;
 </string>
           </argument>
         </arguments>
@@ -53,6 +54,7 @@ monster_id = 0;
 var model = instance_find(obj_model, 0);
 model.monster_party[FIRST, ID] = monster_id;
 model.monster_party[FIRST, LEVEL] = 5;
+model.monster_party[FIRST, MOVE] = move_id;
 room_goto(rm_world);
 </string>
           </argument>

@@ -28,6 +28,7 @@
             <string>/// initialize the battle monster
 var model = instance_find(obj_model, 0);
 scr_init_monster(model.monster_party[FIRST, ID], model.monster_party[FIRST, LEVEL]);
+move_id = model.monster_party[FIRST, MOVE];
 hp = stats[HP];
 
 </string>
@@ -65,7 +66,9 @@ draw_text(80, 53, stats[NAME]);
 draw_set_font(fnt_one);
 
 // Draw the hp bar
-draw_rectangle_colour(96, 75, 143, 76, c_gray, c_gray, c_gray, c_gray, false);
+if (hp &gt; 0) {
+    draw_rectangle_colour(96, 75, 96+(47*(hp/stats[HP])), 76, c_gray, c_gray, c_gray, c_gray, false);
+}
 
 draw_self();
 </string>

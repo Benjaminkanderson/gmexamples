@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// Attack
+with(obj_enemy_monster) {
+    scr_take_damage();
+}
 </string>
           </argument>
         </arguments>

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Create the monster
 monster_id = 3;
+move_id = EMBER;
 image_index = monster_id;
 image_speed = 0;
 </string>
