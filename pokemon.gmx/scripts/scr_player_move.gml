@@ -1,5 +1,11 @@
 ///scr_player_move
 if (place_snapped(COL,ROW)) {
+    // Check for a battle
+    if (place_meeting(x, y, obj_grass) && !checked) {
+        scr_check_battle();
+        checked = true;
+    }
+
     // Get the input
     right = keyboard_check(vk_right);
     left = keyboard_check(vk_left);
@@ -9,6 +15,7 @@ if (place_snapped(COL,ROW)) {
 
 if (right || left || up || down) {
     image_speed = .3;
+    checked = false
 }
 
 if (right) {

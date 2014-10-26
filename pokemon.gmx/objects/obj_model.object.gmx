@@ -38,6 +38,9 @@ scr_create_type_chart();
 
 // Set the font
 draw_set_font(fnt_one);
+
+monster_party[FIRST, ID] = 0;
+monster_party[FIRST, LEVEL] = 5;
 </string>
           </argument>
         </arguments>

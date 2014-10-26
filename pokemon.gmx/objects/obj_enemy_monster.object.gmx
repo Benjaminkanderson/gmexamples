@@ -58,6 +58,9 @@ draw_set_font(fnt_two);
 draw_text(6, -1, stats[NAME]);
 draw_set_font(fnt_one);
 
+// Draw the hp bar
+draw_rectangle_colour(32, 21, 79, 22, c_gray, c_gray, c_gray, c_gray, false);
+
 draw_self();
 </string>
           </argument>

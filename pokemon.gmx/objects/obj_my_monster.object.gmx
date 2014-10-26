@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// initialize the battle monster
-scr_init_monster(3, 5);
+var model = instance_find(obj_model, 0);
+scr_init_monster(model.monster_party[FIRST, ID], model.monster_party[FIRST, LEVEL]);
 hp = stats[HP];
 
 </string>
