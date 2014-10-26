@@ -1,7 +1,7 @@
 ///scr_init_monster(id, level)
-monster_id = argument0;
-level = argument1;
-image_index = monster_id-1;
+monster_id = argument[0];
+level = argument[1];
+image_index = monster_id;
 image_speed = 0;
 
 // Get a reference to the model

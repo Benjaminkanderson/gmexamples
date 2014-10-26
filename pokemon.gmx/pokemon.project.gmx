@@ -23,16 +23,11 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_create_stats.gml</script>
-    <script>scripts\scr_create_random_stats.gml</script>
     <script>scripts\scr_calc_stat.gml</script>
     <script>scripts\scr_calc_hp.gml</script>
-    <script>scripts\scr_create_monster.gml</script>
-    <script>scripts\scr_get_battle_stats.gml</script>
     <script>scripts\scr_take_damage.gml</script>
     <script>scripts\scr_player_move.gml</script>
     <script>scripts\scr_player_stand.gml</script>
-    <script>scripts\scr_checkforbattle.gml</script>
     <script>scripts\scr_init_monster.gml</script>
     <script>scripts\scr_create_base_stats.gml</script>
     <script>scripts\scr_create_base_stat.gml</script>
