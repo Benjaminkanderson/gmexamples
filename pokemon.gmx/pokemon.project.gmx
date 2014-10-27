@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player_left</sprite>
     <sprite>sprites\spr_grass_mask</sprite>
+    <sprite>sprites\spr_solid_mask</sprite>
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_up</sprite>
     <sprite>sprites\spr_player_down</sprite>
@@ -38,13 +39,15 @@
     <script>scripts\scr_create_type.gml</script>
     <script>scripts\scr_enemy_die_state.gml</script>
     <script>scripts\scr_create_moves.gml</script>
+    <script>scripts\scr_get_maxexpr.gml</script>
+    <script>scripts\scr_get_exprgain.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_one</font>
     <font>fonts\fnt_two</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_model</object>
+    <object>objects\MODEL</object>
     <object>objects\obj_player</object>
     <object>objects\obj_my_monster</object>
     <object>objects\obj_enemy_monster</object>
@@ -60,7 +63,7 @@
     <object>objects\obj_attack</object>
     <object>objects\obj_items</object>
     <object>objects\obj_switch</object>
-    <object>objects\obj_battle_controller</object>
+    <object>objects\obj_solid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

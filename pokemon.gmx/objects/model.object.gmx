@@ -2,9 +2,9 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,52 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create the model objects
-monster_count = 3;
-randomize();
-bs[FIRE] = scr_create_stats(49, 54, 65, 40);
-bs[WATER] = scr_create_stats(42, 39, 64, 54);
-bs[GRASS] = scr_create_stats(45, 65, 56, 45);
+            <string>/// Create the model
 
-global.leftmonster = ds_map_create();
-global.leftmonster[? "level"] = 5;
-global.leftmonster[? "bs"] = bs[FIRE];
-global.leftmonster[? "gs"] = scr_create_random_stats();
-global.leftmonster[? "ts"] = scr_create_stats(0, 0, 0, 0);
+// Create the base stats
+scr_create_base_stats();
 
-global.rightmonster = ds_map_create();
-global.rightmonster[? "level"] = 5;
-global.rightmonster[? "bs"] = bs[GRASS];
-global.rightmonster[? "gs"] = scr_create_random_stats();
-global.rightmonster[? "ts"] = scr_create_stats(0, 0, 0, 0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Destroy the model
-for (var i=0; i&lt;monster_count; i++) {
-    ds_map_destroy(bs[i]);
-}
-ds_map_destroy(global.leftmonster);
-ds_map_destroy(global.rightmonster);
+// Create the attacks
+scr_create_moves();
+
+// Create the type chart
+scr_create_type_chart();
+
+// Set the font
+draw_set_font(fnt_one);
+
+monster_party[FIRST, ID] = 0;
+monster_party[FIRST, LEVEL] = 5;
 </string>
           </argument>
         </arguments>

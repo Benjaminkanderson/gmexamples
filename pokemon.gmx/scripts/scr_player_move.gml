@@ -7,10 +7,10 @@ if (place_snapped(COL,ROW)) {
     }
 
     // Get the input
-    right = keyboard_check(vk_right);
-    left = keyboard_check(vk_left);
-    up = keyboard_check(vk_up);
-    down = keyboard_check(vk_down);
+    right = keyboard_check(vk_right) && !place_meeting(x+COL, y, obj_solid);
+    left = keyboard_check(vk_left) && !place_meeting(x-COL, y, obj_solid);
+    up = keyboard_check(vk_up) && !place_meeting(x, y-ROW, obj_solid);
+    down = keyboard_check(vk_down) && !place_meeting(x, y+ROW, obj_solid);
 }
 
 if (right || left || up || down) {
