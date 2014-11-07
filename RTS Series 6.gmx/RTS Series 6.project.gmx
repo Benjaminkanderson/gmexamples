@@ -31,6 +31,7 @@
     <script>scripts\scr_weapon_init.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_view_controller</object>
     <object>objects\obj_ps</object>
     <object>objects\obj_ship</object>
     <object>objects\obj_player_ship</object>
@@ -40,7 +41,6 @@
     <object>objects\obj_enemy_fighter</object>
     <object>objects\obj_target</object>
     <object>objects\obj_mouse</object>
-    <object>objects\obj_view_controller</object>
     <object>objects\obj_weapon</object>
     <object>objects\obj_laser</object>
     <object>objects\obj_enemy_weapon</object>
