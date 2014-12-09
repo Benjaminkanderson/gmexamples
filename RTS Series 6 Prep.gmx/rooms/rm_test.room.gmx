@@ -60,6 +60,7 @@
     <instance objName="obj_enemy_fighter" x="512" y="256" name="inst_2E404BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_fighter" x="608" y="288" name="inst_302D7AA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spacestation" x="160" y="64" name="inst_99F86FD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_space_rock" x="96" y="-64" name="inst_9A339908" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
