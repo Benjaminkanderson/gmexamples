@@ -14,6 +14,8 @@
     <sprite>sprites\spr_mouse</sprite>
     <sprite>sprites\spr_laser</sprite>
     <sprite>sprites\spr_enemy_laser</sprite>
+    <sprite>sprites\spr_station</sprite>
+    <sprite>sprites\spr_rock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,7 +31,13 @@
     <script>scripts\scr_part_laser_init.gml</script>
     <script>scripts\scr_part_enemy_laser_init.gml</script>
     <script>scripts\scr_weapon_init.gml</script>
+    <script>scripts\scr_station_idle.gml</script>
+    <script>scripts\scr_station_selected.gml</script>
+    <script>scripts\scr_station_building.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_gui</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_view_controller</object>
     <object>objects\obj_ps</object>
@@ -45,6 +53,9 @@
     <object>objects\obj_laser</object>
     <object>objects\obj_enemy_weapon</object>
     <object>objects\obj_enemy_laser</object>
+    <object>objects\obj_rock</object>
+    <object>objects\obj_station</object>
+    <object>objects\obj_globals</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
